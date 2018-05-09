@@ -10,8 +10,8 @@ import matplotlib.ticker as ticker
 import numpy as np
 
 #Account for reporting date slippage between Jobs and Savings figures (BLS vs BEA)
-saving = quandl.get("FRED/PSAVERT", start_date="1990-01-01", authtoken="_uhAD1-g9JdY2teUwiAb")  # Import data using API call and applicable rules
-jobs = quandl.get("FRED/UNRATE", start_date="1990-12-31", end_date="2018-03-01", authtoken="_uhAD1-g9JdY2teUwiAb")
+saving = quandl.get("FRED/PSAVERT", start_date="1990-01-01", authtoken="YOUR_KEY")  # Import data using API call and applicable rules
+jobs = quandl.get("FRED/UNRATE", start_date="1990-12-31", end_date="2018-03-01", authtoken="YOUR_KEY")
 
 #print(saving,jobs)                        # Show data in workspace
 
