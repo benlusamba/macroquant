@@ -9,8 +9,8 @@ import matplotlib.ticker as ticker
 import numpy as np
 
 #Account for reporting date slippage between Jobs and Savings figures (BLS vs BEA)
-nycpi = quandl.get("FRED/CUURA101SA0", start_date="1990-01-01", authtoken="_uhAD1-g9JdY2teUwiAb")  # Import data using API call and applicable rules
-cpi = quandl.get("FRED/CPIAUCSL", start_date="1990-01-01", authtoken="_uhAD1-g9JdY2teUwiAb")
+nycpi = quandl.get("FRED/CUURA101SA0", start_date="1990-01-01", authtoken="API_KEY")  # Import data using API call and applicable rules
+cpi = quandl.get("FRED/CPIAUCSL", start_date="1990-01-01", authtoken="API_KEY")
 
 nycpi.to_csv('nycpi.csv')             # Export Data as .csv
 cpi.to_csv('cpi.csv')
